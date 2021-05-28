@@ -14,7 +14,7 @@ except:
 try:
     import win32gui
 except:
-    subprocess.call("pip install win32gui",shell=True)
+    subprocess.call("pip install pywin32",shell=True)
     import win32gui
 try:
     from pynput.keyboard import Key, Controller
