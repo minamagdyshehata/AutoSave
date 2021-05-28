@@ -4,7 +4,7 @@
 ## https://github.com/minamagdyshehata ##
 #########################################
 
-import winsound, sys, getopt, winreg, os, win32gui, subprocess,threading
+import winsound, sys, getopt, winreg, os, subprocess,threading
 from time import sleep
 from pynput.keyboard import Key, Controller
 keyboard = Controller()
@@ -13,6 +13,11 @@ try:
 except:
     subprocess.call("pip install easygui",shell=True)
     import easygui
+try:
+    import win32gui
+except:
+    subprocess.call("pip install win32gui",shell=True)
+    import win32gui
     
 #Declaring variables
 scriptname =  os.path.basename(sys.argv[0])
