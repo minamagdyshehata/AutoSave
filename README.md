@@ -14,3 +14,4 @@
 *  Any change in the registry will be acknowledged by 2 beeps.
 *  Any change in the registry will be acknowledged by 1 beep.
 *  This script is for Windows machines.
+*  While testing the script I realized that for some strange reason it's not working with Microsoft Edge (you can't add it to StopList and it damage the settings file to the point that you will need to reset the settings using -g. I really don't care...no one is using it anyway 😂😂.
