@@ -102,7 +102,12 @@ def ActiveWindow():
         loc = activewindow.rfind("-") + 2
     else:
         loc = 0
-    return activewindow[loc:]
+    activewindow = activewindow[loc:]
+    for x in range (0,len(activewindow)):#detecting unicode characters in active window name and replacing it with *
+        print(activewindow[x] + " : " + str(ord(activewindow[x])))
+        if ord(activewindow[x]) > 127:
+            activewindow = activewindow.replace(activewindow[x],"*")
+    return activewindow
 
 def FoundInStopList():#searches for the active window in the StopList
     global StopList
