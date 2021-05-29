@@ -302,3 +302,6 @@ while True:
 ##*  Any change in the registry will be acknowledged by 1 beep.
 ##*  This script is for Windows machines.
 ##*  While testing the script I realized that for some strange reason it isn't working with Microsoft Edge (you can't add it to StopList and it damage the settings file to the point that you will need to reset the settings using -g. I really don't care...no one is using it anyway 😂😂.
+##*  Update 29.05.2021:
+##*    I couldn't resiste finding out why it doesn't work with Microsoft Edge, and it turned out that after the word Microsoft there is a unicode character 'u200b'(ZERO WIDTH SPACE)!!
+##*    The script is modified so that it detects that character and replace it with '*' so that it doesn't damage the settings file.
